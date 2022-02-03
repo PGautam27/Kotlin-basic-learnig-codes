@@ -2,10 +2,15 @@ package Basics
 
 
 fun main(){
-    val c = Integer.valueOf(readLine())
-    val k = values(c)
-    k.StoreValue()
-    k.print()
+    //val c = Integer.valueOf(readLine())
+    val a:Long = readln().toLong()
+    var k: Int = 0
+    for(i in 1..a){
+        if(a%i==0L){
+            ++k
+        }
+    }
+    print(k)
 }
 
 
@@ -22,7 +27,7 @@ class values constructor(a:Int){
     private fun checkValue(z:Number,m:Number,n:Number) {
         var k: Long = 0
         for (i in 1..m.toLong()){
-            for (j in 1..n.toLong()){
+            for (j in i..n.toLong()){
                 if (i*j == z){
                     ++k
                 }
