@@ -1,5 +1,5 @@
 package Basics
-
+import kotlin.math.*
 fun check(a:Int,b:Int?,c:Int?){
     if(a> b!! || a>c!!){
         println("UPLOAD ANOTHER")
